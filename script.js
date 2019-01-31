@@ -13,7 +13,13 @@ function myFunction() {
 
 //open the menu 
 function slideMenu(){
-        document.getElementById("menubtn").style.display = 'block';  
+    if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
+        document.getElementById("menubtn").style.display = 'block'; 
+        document.getElementById("menubtn").style.backgroundColor = 'white';
+    } else {
+        document.getElementById("menubtn").style.display = 'block'; 
+        document.getElementById("menubtn").style.backgroundColor = 'transparent';
+    }  
 }
 
 

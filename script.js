@@ -4,10 +4,8 @@ function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
         navbar.className='card';
-        document.getElementById("menubtn").style.backgroundColor = 'white';
     } else {
         navbar.className= 'bar';
-        document.getElementById("menubtn").style.backgroundColor = 'transparent';
     }
 }
 

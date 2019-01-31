@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.bar{
+    position: absolute;
+    top:0;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
+    
+}
+
+.btn{
+    display: none;
+}
+
+.bar-item{
+    padding: 8px 16px;
+    height: auto;
+    display: inline-block;
+    text-decoration: none;
+    color: #777;
+}
+
+.bar-item:hover{
+    background-color: #E8E8E8;
+    color: #000;
+}
+
+.image1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(parallax1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+    opacity: 0.75;
+}
+
+/* scroll*/
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.card{
+    position: fixed;
+    animation: animatetop 0.4s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    width: 100%;
+    z-index: 1;
+    /*color: #000 !important;*/
+    background-color: #fff !important
+}
+
+.bar-small-item{
+    display: none;
+}
+
+@media screen and (max-width: 475px) {
+    .button{
+        color: blue;
+        display: none;
+    }
+    
+    
+    .btn{
+        display: inline-block;
+        padding: 8px 16px;
+        color: #777;
+        float: right;
+        /*font-size: 1.2em;*/
+    }
+    
+    .btn:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    .bar-small{
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 34px;
+        z-index: 1;
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16), 0 5px 10px 0 rgba(0, 0, 0, 0.12);
+        background-color: transparent;
+    }
+    
+    .bar-small-item{
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #777;
+        /*background-color: white;*/
+        padding: 8px 16px;
+        /*font-size: 1.3em;*/
+    }
+    
+    .bar-small-item:hover{
+        color: black;
+        background-color: #E8E8E8;
+    }
+}

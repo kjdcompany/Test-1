@@ -4,20 +4,16 @@ function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
         navbar.className='card';
+        document.getElementById("menubtn").style.backgroundColor = 'white';
     } else {
         navbar.className= 'bar';
+        document.getElementById("menubtn").style.backgroundColor = 'transparent';
     }
 }
 
 //open the menu 
 function slideMenu(){
-    if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
-        document.getElementById("menubtn").style.display = 'block'; 
-        document.getElementById("menubtn").style.backgroundColor = 'white';
-    } else {
-        document.getElementById("menubtn").style.display = 'block'; 
-        document.getElementById("menubtn").style.backgroundColor = 'transparent';
-    }  
+        document.getElementById("menubtn").style.display = 'block';  
 }
 
 

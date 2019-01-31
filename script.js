@@ -13,7 +13,11 @@ function myFunction() {
 
 //open the menu 
 function slideMenu(){
-        document.getElementById("menubtn").style.display = 'block';  
+       if (document.getElementById("menubtn").style.display == 'block'){
+           document.getElementById("menubtn").style.display = 'none';
+       } else {
+           document.getElementById("menubtn").style.display = 'block';
+       }  
 }
 
 

@@ -92,7 +92,7 @@
     }
     
     .bar-small{
-        display: block;
+        display: none;
         position: fixed;
         width: 100%;
         top: 34px;
